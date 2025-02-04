@@ -24,6 +24,7 @@ body {
     border-radius: 10px; /* Rounded corners for a modern look */
 }
 
+/* Hero Text Overlay */
 .hero-text {
     position: absolute;
     top: 50%;
@@ -40,12 +41,11 @@ body {
 
 .hero h2 {
     font-family: 'Playfair Display', serif; /* Fancy font */
-    font-size: 2.8rem; /* Make it bigger */
+    font-size: 2.8rem; /* Bigger title */
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a soft shadow for elegance */
 }
-
 
 .hero p {
     font-size: 1.2rem;
@@ -79,4 +79,50 @@ section {
     width: 80%;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Mobile & Tablets */
+@media (max-width: 1024px) {
+    .hero-text {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-text {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .specialties, .about, .contact {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }
